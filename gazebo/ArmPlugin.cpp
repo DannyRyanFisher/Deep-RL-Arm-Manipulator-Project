@@ -1,7 +1,6 @@
 /* 
  * Author - Dustin Franklin (Nvidia Jetson Developer)
  * Modified by - Sahil Juneja, Kyle Stewart-Frantz
- * Modified by - Muthanna A. Attyah - June 2018
  *
  */
 
@@ -40,7 +39,7 @@
 #define NUM_ACTIONS		DOF*2		// Each joint action is either decreas or increas. DOF is number of joints
 #define OPTIMIZER 		"RMSprop"	// RMSprop, Adam, AdaGrad, None.
 #define LEARNING_RATE 	0.012f		// Smaller number will slow learning but better minimize error 
-#define REPLAY_MEMORY 	10000
+#define REPLAY_MEMORY 	11000
 #define BATCH_SIZE 		32			// bigger size will require more computing power.
 #define USE_LSTM 		true		
 #define LSTM_SIZE 		256
@@ -50,7 +49,7 @@
 
 #define REWARD_WIN  	300.0f
 #define REWARD_LOSS 	-300.0f
-#define REWARD_MULT 	200.0f
+#define REWARD_MULT 	100.0f
 #define alpha 			0.3f
 
 // Define Object Names
