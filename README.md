@@ -8,6 +8,12 @@ The goal of the project is to create a DQN agent and define reward functions to 
 
 This project is based on the Nvidia open source project "jetson-reinforcement" developed by [Dustin Franklin](https://github.com/dusty-nv). 
 
+## Description
+
+This project involved tuning parameters, issuing & defining reward functions and using a C++ API to create a dqnAgent. All of which were programed to achieve the objectives stated above. The file which was edited to achieve this can be found in [`ArmPlugin.cpp`](gazebo/ArmPlugin.cpp).
+
+<img src="https://github.com/dusty-nv/jetson-reinforcement/raw/master/docs/images/gazebo_arm.jpg">
+*Robotic arm used for the Reinforcement Learning project.*
 
 ## Building from Source
 
@@ -120,6 +126,3 @@ $ chmod u+x gazebo-arm.sh
 $ ./gazebo-arm.sh
 ```
 
-<img src="https://github.com/dusty-nv/jetson-reinforcement/raw/master/docs/images/gazebo_arm.jpg">
-
-The plugins which hook the learning into the simulation are located in the `gazebo/` directory of the repo. The RL agent and the reward functions are to be defined in [`ArmPlugin.cpp`](gazebo/ArmPlugin.cpp).
